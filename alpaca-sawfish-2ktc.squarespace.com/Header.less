@@ -1,0 +1,45 @@
+:local .container {
+  display: flex;
+  height: 55px;
+  align-items: center;
+}
+:local .slot {
+  display: flex;
+  flex: 1;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+:local .slot.left,
+:local .slot.right {
+  max-width: 30%;
+}
+:local .slot.left button,
+:local .slot.right button,
+:local .slot.left span,
+:local .slot.right span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+:local .slot.left {
+  justify-content: flex-start;
+}
+:local .slot.center {
+  flex-grow: 4;
+  width: 0;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+}
+:local .slot.center .titleContainer {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+:local .slot.right {
+  justify-content: flex-end;
+}
